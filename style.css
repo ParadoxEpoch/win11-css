@@ -343,12 +343,20 @@ body {
     transition: 0.15s background-color;
 }
 
+#startmenu > .powerbar .powerbar-user:hover,
 #startmenu > .powerbar .powerbar-btns > div:hover {
     background: rgb(255 255 255 / 8%);
 }
 
 #startmenu > .powerbar .powerbar-btns > div > i {
     font-size: 1.1em;
+}
+
+#startmenu > .powerbar .powerbar-user {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 #startmenu > .powerbar .powerbar-user i {

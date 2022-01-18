@@ -12,6 +12,7 @@
 
 - The context menu border does not display correctly over the top of other elements
 - Several microinteractions are not yet implemented on the start menu
+- The GitHub Pages hosted version of the project is missing all Font Awesome icons due to licensing reasons
 
 ## :heart: Support
 

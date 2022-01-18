@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nebula ContextMenu Demo</title>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootscreen.css">
+</head>
+
+<body>
+    <div id="bootscreen" class="is-active">
+        <div class="logo">
+            <i class="fab fa-microsoft" id="windows"></i>
+        </div>
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div id="contextMenu" class="acrylic">
+        <ul>
+            <li class="menu"><i class="fas fa-th-large"></i> View</li>
+            <li class="menu"><i class="fad fa-sort-alpha-up" style="--fa-secondary-color: #4bc1fe"></i> Sort by</li>
+            <li><i class="fal fa-redo"></i> Refresh</li>
+            <hr>
+            <li class="undo"><i class="fal fa-undo" style="color: #4bc1fe"></i> Undo Copy</li>
+            <li class="menu"><i class="fal fa-plus-circle"></i> New</li>
+            <hr>
+            <li><i class="fal fa-desktop"></i> Display settings</li>
+            <li><i class="fal fa-paint-brush-alt"></i> Personalize</li>
+            <hr>
+            <li><i><img src="winterminal.png" width="15px" style="transform: scale(1.1); filter: contrast(1.1)"></i> Open in Windows Terminal</li>
+            <hr>
+            <li class="more-opts"><i class="fal fa-expand"></i> Show more options</li>
+        </ul>
+    </div>
+
+    <div id="startmenu">
+
+        <div class="menubody">
+            <div class="menusearch">
+                <input type="text" placeholder="Type here to search">
+            </div>
+            <div class="menupinned">
+                <div class="menuhead">
+                    <div style="font-weight: 600">Pinned</div>
+                    <div><button>All Apps <i class="fal fa-angle-right"></i></button></div>
+                </div>
+                <div class="menuitems">
+                    <div>
+                        <div>
+                            <img src="icons/authy.png">
+                        </div>
+                        <div>Authy</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/access.png">
+                        </div>
+                        <div>Access</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/word.png">
+                        </div>
+                        <div>Word</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/excel.png">
+                        </div>
+                        <div>Excel</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/onenote.png">
+                        </div>
+                        <div>OneNote</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/outlook.png">
+                        </div>
+                        <div>Outlook</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/photoshop.png">
+                        </div>
+                        <div>Photoshop</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/illustrator.png">
+                        </div>
+                        <div>Illustrator</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/terminal.png">
+                        </div>
+                        <div>Terminal</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/xbox.png">
+                        </div>
+                        <div>Xbox</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/onedrive.png">
+                        </div>
+                        <div>OneDrive</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/vscode.png">
+                        </div>
+                        <div>Visual Studio Code</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/steam.png">
+                        </div>
+                        <div>Steam</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="icons/origin.png">
+                        </div>
+                        <div>Origin</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menusuggested">
+                <div class="menuhead">
+                    <div style="font-weight: 600">Recommended</div>
+                    <div><button>More <i class="fal fa-angle-right"></i></button></div>
+                </div>
+                <div class="menuitems">
+                    <div>
+                        <div><img src="icons/photoshop.png"></div>
+                        <div>
+                            <div>Adobe Photoshop</div>
+                            <div>Recently added</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="icons/illustrator.png"></div>
+                        <div>
+                            <div>Adobe Illustrator</div>
+                            <div>Recently added</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="icons/word.png"></div>
+                        <div>
+                            <div>Word</div>
+                            <div>Recently added</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="icons/excel.png"></div>
+                        <div>
+                            <div>Excel</div>
+                            <div>Recently added</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="icons/steam.png"></div>
+                        <div>
+                            <div>Steam</div>
+                            <div>Recently added</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="icons/edge.png"></div>
+                        <div>
+                            <div>Microsoft Edge</div>
+                            <div>Recently added</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="powerbar">
+            <div>
+                <div class="powerbar-user">
+                    <i class="fad fa-user-circle fa-2x"></i>
+                    <span style="font-size: 0.9em">Paradox</span>
+                </div>
+    
+                <div class="powerbar-btns">
+                    <div><i class="fal fa-file"></i></div>
+                    <div><i class="fal fa-cog"></i></div>
+                    <div><i class="fal fa-power-off"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="taskbar" class="acrylic">
+        <ul>
+            <li class="start-trigger" onclick="app.toggleStart()"><i class="fas fa-th-large icon-winstart"></i></li>
+            <li class="is-open is-focused"><img src="icons/edge.png"></li>
+            <li class="is-open"><img src="icons/fileexplorer.png"></li>
+        </ul>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

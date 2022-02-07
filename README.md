@@ -6,7 +6,7 @@
 
  This is accomplished by studying the [Windows 11 design documentation](https://docs.microsoft.com/en-us/windows/apps/design/signature-experiences/design-principles), eyeballing the user interface to recreate specific elements in CSS and using tools to identify the usage of specific colours across Windows where possible.
 
- Currently only the desktop context menu, start menu and taskbar have been partially implemented.
+ Currently only the desktop context menu, start menu and taskbar have been partially implemented. Right now the interface emulates dark mode, however there are plans to support the *prefers-color-scheme* media query and implement light mode.
 
 ## :link: Dependencies
 

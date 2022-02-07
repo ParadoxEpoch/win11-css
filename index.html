@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Nebula ContextMenu Demo</title>
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./fontawesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="./fonts/FluentSystemIcons-Regular.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./bootscreen.css">
@@ -13,7 +14,7 @@
 <body>
     <div id="bootscreen" class="is-active">
         <div class="logo">
-            <i class="fab fa-microsoft" id="windows"></i>
+            <img src="icons/windows.png" id="windows">
         </div>
         <div class="loader">
             <div class="circle"></div>
@@ -26,19 +27,19 @@
 
     <div id="contextMenu" class="acrylic">
         <ul>
-            <li class="menu"><i class="fas fa-th-large"></i> View</li>
-            <li class="menu"><i class="fad fa-sort-alpha-up" style="--fa-secondary-color: #4bc1fe"></i> Sort by</li>
-            <li><i class="fal fa-redo"></i> Refresh</li>
+            <li class="menu"><i class="icon-ic_fluent_grid_28_regular"></i> View</li>
+            <li class="menu"><i class="icon-ic_fluent_arrow_sort_28_regular" style="--fa-secondary-color: #4bc1fe"></i> Sort by</li>
+            <li><i class="icon-ic_fluent_arrow_clockwise_20_regular"></i> Refresh</li>
             <hr>
-            <li class="undo"><i class="fal fa-undo" style="color: #4bc1fe"></i> Undo Copy</li>
-            <li class="menu"><i class="fal fa-plus-circle"></i> New</li>
+            <li class="undo"><i class="icon-ic_fluent_arrow_undo_48_regular" style="color: #4bc1fe"></i> Undo Copy</li>
+            <li class="menu"><i class="icon-ic_fluent_add_circle_28_regular"></i> New</li>
             <hr>
-            <li><i class="fal fa-desktop"></i> Display settings</li>
-            <li><i class="fal fa-paint-brush-alt"></i> Personalize</li>
+            <li><i class="icon-ic_fluent_desktop_28_regular"></i> Display settings</li>
+            <li><i class="icon-ic_fluent_edit_20_regular"></i> Personalize</li>
             <hr>
-            <li><i><img src="winterminal.png" width="15px" style="transform: scale(1.1); filter: contrast(1.1)"></i> Open in Windows Terminal</li>
+            <li><i style="margin-right: 12px;"><img src="winterminal.png" width="15px" style="transform: scale(1.1) translate(2px, -2px); filter: contrast(1.1);"></i> Open in Windows Terminal</li>
             <hr>
-            <li class="more-opts"><i class="fal fa-expand"></i> Show more options</li>
+            <li class="more-opts"><i class="icon-ic_fluent_expand_up_right_28_regular"></i> Show more options</li>
         </ul>
     </div>
 
@@ -51,7 +52,7 @@
             <div class="menupinned">
                 <div class="menuhead">
                     <div style="font-weight: 600">Pinned</div>
-                    <div><button>All Apps <i class="fal fa-angle-right"></i></button></div>
+                    <div><button>All Apps <i class="icon-ic_fluent_chevron_right_20_regular"></i></button></div>
                 </div>
                 <div class="menuitems">
                     <div>
@@ -143,7 +144,7 @@
             <div class="menusuggested">
                 <div class="menuhead">
                     <div style="font-weight: 600">Recommended</div>
-                    <div><button>More <i class="fal fa-angle-right"></i></button></div>
+                    <div><button>More <i class="icon-ic_fluent_chevron_right_20_regular"></i></button></div>
                 </div>
                 <div class="menuitems">
                     <div>
@@ -195,14 +196,14 @@
         <div class="powerbar">
             <div>
                 <div class="powerbar-user">
-                    <i class="fad fa-user-circle fa-2x"></i>
-                    <span style="font-size: 0.9em">Paradox</span>
+                    <img src="icons/user.png">
+                    <span style="font-size: 0.85em">Paradox</span>
                 </div>
     
                 <div class="powerbar-btns">
-                    <div><i class="fal fa-file"></i></div>
-                    <div><i class="fal fa-cog"></i></div>
-                    <div><i class="fal fa-power-off"></i></div>
+                    <div><i class="icon-ic_fluent_document_20_regular"></i></div>
+                    <div><i class="icon-ic_fluent_settings_20_regular"></i></div>
+                    <div><i class="icon-ic_fluent_power_20_regular"></i></div>
                 </div>
             </div>
         </div>
@@ -211,7 +212,7 @@
 
     <div id="taskbar" class="acrylic">
         <ul>
-            <li class="start-trigger" onclick="app.toggleStart()"><i class="fas fa-th-large icon-winstart"></i></li>
+            <li class="start-trigger" onclick="app.toggleStart()"><i class="fas fa-th-large ico-winstart"></i></li>
             <li class="is-open is-focused"><img src="icons/edge.png"></li>
             <li class="is-open"><img src="icons/fileexplorer.png"></li>
         </ul>

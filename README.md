@@ -1,18 +1,26 @@
-# win11-css
+# Web11
+
 **:construction: This project is a work in progress :construction:**
- 
- A faithful Windows 11 UI recreation for the web. Created from scratch with HTML/CSS/JS.
+
+ A faithful Windows 11 shell recreation for the web with an emphasis on emulating the Windows 11 "Fluent" UI as accurately as possible. Created from scratch with HTML/CSS/JS.
+
+ This is accomplished by studying the [Windows 11 design documentation](https://docs.microsoft.com/en-us/windows/apps/design/signature-experiences/design-principles), eyeballing the user interface to recreate specific elements in CSS and using tools to identify the usage of specific colours across Windows where possible.
+
+ Currently only the desktop context menu, start menu and taskbar have been partially implemented.
 
 ## :link: Dependencies
 
-- **Font Awesome Pro** *( install to fontawesome/css/all.min.css )*
-  - Required for context menu icons
+- **jQuery** *( CDN link referenced in index.html )*
+  - This will likely be removed at some point since it's only being used for basic DOM manipulation
 
-## :bangbang:	Known Issues
+- [**Microsoft Fluent System Icons**](https://github.com/microsoft/fluentui-system-icons) *( included in /fonts )*
+  - Webfont used for most shell icons
+
+## :bangbang: Known Issues
 
 - The context menu border does not display correctly over the top of other elements
-- Several microinteractions are not yet implemented on the start menu
-- The GitHub Pages hosted version of the project is missing all Font Awesome icons due to licensing reasons
+- Several microinteractions have not yet been implemented on the start menu
+- Context menu icons are not using a duotone colour scheme yet
 
 ## :heart: Support
 

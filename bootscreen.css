@@ -35,8 +35,8 @@
 }
 
 #bootscreen .logo #windows {
-    color: #0078d7;
-    font-size: 120px;
+    /* color: #0078d7; */
+    width: 120px;
 }
 #bootscreen .loader {
     width: 50px;

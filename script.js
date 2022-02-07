@@ -1,5 +1,3 @@
-/* $('.acrylic').draggable(); */
-
 class App {
     constructor() {
         this.init();

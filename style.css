@@ -17,6 +17,11 @@ body {
   font-size: 0.90em;
 }
 
+i[class^="icon-"]:before,
+i[class*=" icon-"]:before {
+    vertical-align: bottom;
+}
+
 .acrylic {
   display: flex;
   background: inherit;
@@ -78,7 +83,8 @@ body {
 #contextMenu ul {
     list-style-type: none;
     padding: 0;
-    margin: 7px 5px;
+    /* margin: 7px 5px; */
+    margin: 5px;
     width: 100%;
 }
 
@@ -89,7 +95,7 @@ body {
 }
 
 #contextMenu ul li {
-    padding: 5px 10px;
+    padding: 6px 10px;
     margin: 4px 0;
     user-select: none;
 }
@@ -108,11 +114,14 @@ body {
 }
 
 #contextMenu ul li > i {
-    margin-right: 10px;
-    width: 15px;
-    height: 15px;
+    margin-right: 8px;
+    /* width: 15px;
+    height: 15px; */
+    display: inline-block;
+    font-size: 1.3em;
+    line-height: 1;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 #contextMenu ul li.undo::after {
@@ -130,13 +139,21 @@ body {
     margin-top: 2px;
 }
 
+/* Context Menu Chevron */
 #contextMenu ul li.menu::after {
-    font-family: "Font Awesome 5 Pro";
-    content: "\f054";
     color: #aab7d3;
     float: right;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 2px;
+
+    font-family: FluentSystemIcons-Regular !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f2ae";
 }
 
 /* .acrylic input[type=radio] {
@@ -267,8 +284,9 @@ body {
 #taskbar > ul > li > i,
 #taskbar > ul > li > img {
     width: 25px;
+    height: 25px;
     text-align: center;
-    transition: 0.2s transform, 0.15s color;
+    transition: 0.2s transform, 0.15s background;
 }
 
 #taskbar > ul > li:active > i,
@@ -276,22 +294,47 @@ body {
     transform: scale(0.8);
 }
 
-#taskbar > ul > li > i.icon-winstart {
+#taskbar > ul > li > i.ico-winstart {
     /* color: #5ccbff; */
-    background: -webkit-linear-gradient(#75f1ff, #0fa0ff);
+    /* background: -webkit-linear-gradient(#75f1ff, #0fa0ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scaleX(0.9);
+    transform: scaleX(0.9); */
+    /* content: url('icons/win-start.svg'); */
+    
 }
 
-#taskbar > ul > li:active > i.icon-winstart {
-    /* color: #0b9bfe; */
-    background: #0b9bfe;
-    transform: scale(0.8) scaleX(0.9) !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* filter: brightness(0) saturate(100%) invert(63%) sepia(62%) saturate(5481%) hue-rotate(180deg) brightness(97%) contrast(105%); */
+#taskbar > ul > li > i.ico-winstart::after {
+
+    /* transition: 2.15s background; */
+
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+
+    content: '';
+
+    -webkit-mask: url('icons/win-start.svg') no-repeat 50% 50%;
+    mask: url('icons/win-start.svg') no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+
+    transform: scaleX(0.9);
+    background: -webkit-linear-gradient(#75f1ff, #0fa0ff);
 }
+
+#taskbar > ul > li:active > i.ico-winstart::after {
+    /* color: #0b9bfe; */
+    /* background: #0b9bfe; */
+    transform: scale(0.95) scaleX(0.9) !important;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    filter: brightness(0) saturate(100%) invert(63%) sepia(62%) saturate(5481%) hue-rotate(180deg) brightness(97%) contrast(105%);
+}
+
+/* #taskbar > ul > li:active > i.ico-winstart::before {
+    content: url('icons/win-start.svg');
+} */
 
 #startmenu {
     width: 640px;
@@ -349,7 +392,8 @@ body {
 }
 
 #startmenu > .powerbar .powerbar-btns > div > i {
-    font-size: 1.1em;
+    font-size: 1.4em;
+    display: flex;
 }
 
 #startmenu > .powerbar .powerbar-user {
@@ -359,8 +403,10 @@ body {
     border-radius: 4px;
 }
 
-#startmenu > .powerbar .powerbar-user i {
-    margin-right: 10px;
+#startmenu > .powerbar .powerbar-user img {
+    width: 32px;
+    border-radius: 50px;
+    margin-right: 12px;
 }
 
 #startmenu > .powerbar .powerbar-user > * {
@@ -402,8 +448,16 @@ body {
 }
 
 #startmenu > .menubody .menusearch::before {
-    font-family: "Font Awesome 5 Pro";
-    content: "\f002";
+    font-family: FluentSystemIcons-Regular !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f68f";
+
+    font-size: 1.4em;
     color: #fff;
     position: absolute;
     top: 0;
@@ -435,8 +489,13 @@ body {
 }
 
 #startmenu > .menubody .menuhead button > i {
-    margin-left: 10px;
+    margin-left: 5px;
     font-size: 1.1em
+}
+
+#startmenu > .menubody .menuhead button > i[class^="icon-"]:before,
+#startmenu > .menubody .menuhead button > i[class*=" icon-"]:before {
+    vertical-align: middle;
 }
 
 #startmenu > .menubody .menupinned > .menuitems,
